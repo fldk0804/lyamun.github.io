@@ -18,8 +18,8 @@
         />
         <link rel="stylesheet" type="text/css" href="index.css" />
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
         <script src="https://kit.fontawesome.com/bfdbe72e25.js" crossorigin="anonymous"></script>
+        
         <script src="index.js"></script>
 
         <src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></src>
@@ -29,7 +29,7 @@
 
     <body>
         <header>
-            <div class="navbar">
+            <!-- <div class="navbar">
                 
                 <div class="pt-2 clearfix"> 
                     <div class="col-sm-1 float-start"> 
@@ -41,7 +41,7 @@
 
                     <div class="col-sm-2 float-end"> 
                         <div class="dropdown float-left">
-                            <button class="dropbtn">Dropdown
+                            <button class="dropbtn">Attachments
                                 <i class="fa fa-caret-down"></i>
                             </button>
                             <div class="dropdown-content">
@@ -60,13 +60,93 @@
                     </div>
                     
                 </div>
+            </div> -->
+            <div class="wrap w-100">
+                <div class="row align-items-center m-0 d-none d-md-flex justify-content-center">
+                    <div class="col-4 text-center rounded-pill " style="background-color: #333;">
+                        <ul class="d-flex list-unstyled justify-content-center m-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#" style="font-size:20px; padding:5px">Home</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-2 bg-transparent px-3">
+                        <h1 class="text-center fw-bold figure-img text-primary"><img src="static/images/_mainlogo.png" style="width:60%; height:60%;"></h1>
+                    </div>
+                    <div class="col-4 text-center rounded-pill" style="background-color: #333;">
+                        <ul class="d-flex list-unstyled justify-content-center m-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#" style="font-size:20px; padding:5px; padding-right:80px">About</a>
+                            </li>
+                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:20px; padding:5px">
+                                    Work
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Resume</a></li>
+                                    <li><a class="dropdown-item" href="#">Cover Letter</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Projects</a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <nav class="navbar navbar-light bg-primary d-md-none">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
-        </header>
+            
 
+        </header>
+        
         <main>
-            <div class="header">
-                <button class="buttonResume" style="vertical-align:middle"><span>Resume</span>
-                <button class="buttonResume" style="vertical-align:middle"><span>CV</span>
+            <div class = "pt-5 pb-5 container-fluid"> 
+                <div class = "row justify-content-center">
+                    <div class = "col-md-4" style="text-align: left;">
+                        <h1 style="font-weight: bold;">Hi, I am Lya Mun.</h1>
+                        <h2 style="padding-bottom: 50px;" >I am an aspiring software developer.</h1>
+                        <button type="submit" class="buttonResume" style="vertical-align:middle"><span>Contact Me</span>
+                    </div>
+                    <div class = "col-md-2" style="text-align: right;">
+                        <img src="static/images/profileWh.JPG" alt="mini profile" class="center" width=90% height=90% style="border-radius:50%;">
+                    </div>
+                </div>
             </div>
 
             <div class="row justify-content-center">

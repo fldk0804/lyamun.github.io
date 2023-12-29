@@ -17,18 +17,23 @@
 }
 
 .buttonResume {
-  display: inline-block;
-  border-radius: 50px;
-  background-color: #009DD1;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 25px;
-  padding: 8px;
-  width: 150px;
-  transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+  outline: none;
+  position: relative;
+  z-index: 3;
+  background: transparent;
+  color: #1172c4;
+  font-size: 14px;
+  border-color: #1172c4;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 22px;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+    
+
+    
 }
 
 .buttonResume span {
@@ -47,8 +52,16 @@
   transition: 0.5s;
 }
 .buttonResume:hover {
-  background-color: #006181;
+  color: white;
+  background: #1172c4;
+  border-color: white;
+  transition: all 0.2s linear;
 }
+
+.buttonResume:active {
+  border-radius: 22px;
+}
+
 .buttonResume:hover span {
   padding-right: 25px;
 }
@@ -83,10 +96,6 @@ ul {
 
 li {
   margin-bottom: 5px;
-}
-
-.navbar {
-  background-color: #333;
 }
 
 /* Links inside the navbar */
@@ -152,7 +161,6 @@ li {
 }
 
 body {
-  background: #333;
   font-style: serif;
 }
 
@@ -306,7 +314,6 @@ html,body{
   display: grid;
   height: 100%;
   place-items: center;
-  background: #6665ee;
 }
 ::selection{
   color: #fff;
@@ -426,4 +433,10 @@ html,body{
 }
 .progress-line.mysql span::after{
   content: "75%";
+}
+
+.wrap {
+  background-color: white;
+  display: flex;
+  align-items: center;
 }

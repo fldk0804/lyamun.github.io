@@ -1,103 +1,89 @@
-a {
-    color:#fff;
-    text-decoration:none;
-  }
-* {
-outline:0;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
+:root {
+	--positionX: 0%;
+	--animation-duration: 2s;
+	--animation-delay: 1s;
 }
-body {
-margin-top:100px;
-background:#111;
-font-size:11px;
-color:#aaa;
-font-family:"Poppins", sans-serif;
-color:
+.wrapper {
+	position: relative;
+	height: 500px;
+	background: linear-gradient(#f2f9fa, #02aac4 80%);
 }
-
-.container  {
-max-width:1140px;
-margin:0 auto; 
-display:block;
+.bubble-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }
-.row  {
-display:flex;
-align-items:center
+.btn {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 24px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	line-height: 1;
+	height: 80px;
+	width: 110px;
+	border: none;
+	border-radius: 50%;
+	color: #fff;
+	background: radial-gradient(#006688 40%, #004466);
+	cursor: pointer;
 }
-
-.thumb-box {
-display:flex;
-max-width:33.3333%;
-margin:0 15px;
-position:relative;
-
-    
-    
+.btn:hover {
+	background: radial-gradient(#0088aa 40%, #005577);
 }
-
-
-.thumb-box a {
-padding:0;
-position: relative;
-    width: 100%;
-    height: 100%;
-z-index:9997;
-}
-
-.thumb-box img {
-
-    width:100%;
-    height:280px;
-    float:left;
+.bubble-row {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
 }
 
-.overlay-box {
-position:absolute;
-bottom:0;
-width:90%;
-z-index:9998;
-left:0;
-padding:5%;
-    background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.75));
+@keyframes float {
+	0% {
+		opacity: 0;
+		transform: translateY(0);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(-400px);
+	}
 }
 
-.meta {
-font-size:14px;
-display:block;
-
+.bubble {
+	position: absolute;
+	bottom: 0;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	background: radial-gradient(transparent, #fff);
+	opacity: 0;
+	animation: float linear;
+	animation-delay: var(--animation-delay);
+	animation-duration: var(--animation-duration);
 }
-
-.main-title {
-font-size:16px;
-display:block;
-font-weight:700;
-text-shadow:0 0 1px rgba(0,0,0,0.5);
+.lg {
+	height: 100px;
+	width: 100px;
+	left: var(--positionX);
 }
-
-.description {
-color:#ccc;
-font-size:13px;
-margin-top:5px; 
-display:block;
-color: #ccc;
-    max-height: 0;
-    line-height: 18px;
-    overflow: hidden;
-    opacity: 0;
-    transition: opacity 0.4s ease-out, max-height 0.4s ease-out, margin 0.4s;
+.md {
+	height: 80px;
+	width: 80px;
+	left: var(--positionX);
 }
-
-.thumb-box a:hover .description {
-    opacity:1;
-        max-height: 100px;
-        margin-top: 5px;
-        transition: opacity 0.4s ease-out, max-height 0.9s ease-out
+.sm {
+	height: 50px;
+	width: 50px;
+	left: var(--positionX);
 }
-
-.thumb-box a:hover .overlay-box {
-background-image: linear-gradient(to bottom, transparent, rgba(0,0,0, 1));
-
-}
-  
-  
-  
