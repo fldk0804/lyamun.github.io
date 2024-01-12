@@ -9,7 +9,12 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         /> 
+
+
         <!-- Bootstrap CSS v5.2.1 -->
+        <script src="https://kit.fontawesome.com/877d2cecdc.js" crossorigin="anonymous"></script>
+
+
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -18,7 +23,7 @@
         />
         <link rel="stylesheet" type="text/css" href="index.css" />
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <script src="https://kit.fontawesome.com/bfdbe72e25.js" crossorigin="anonymous"></script>
+        
         
         <script src="index.js"></script>
 
@@ -28,6 +33,7 @@
     </head>
 
     <body>
+        
         <header>
             <!-- <div class="navbar">
                 
@@ -61,12 +67,12 @@
                     
                 </div>
             </div> -->
-            <div class="wrap w-100">
+            <div id="start" class="wrap w-100">
                 <div class="row align-items-center m-0 d-none d-md-flex justify-content-center">
                     <div class="col-4 text-center rounded-pill " style="background-color: #333;">
                         <ul class="d-flex list-unstyled justify-content-center m-0">
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#" style="font-size:20px; padding:5px">Home</a>
+                                <a class="nav-link text-white" href="#" style="font-size:18px; padding:5px">Home</a>
                             </li>
                         </ul>
                     </div>
@@ -76,20 +82,20 @@
                     <div class="col-4 text-center rounded-pill" style="background-color: #333;">
                         <ul class="d-flex list-unstyled justify-content-center m-0">
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#" style="font-size:20px; padding:5px; padding-right:80px">About</a>
+                                <a class="nav-link text-white" href="#" style="font-size: 18px; padding:5px; padding-right:80px">About</a>
                             </li>
                             
                             <li class="nav-item dropdown">
-                                <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:20px; padding:5px">
+                                <a class="nav-link text-white dropdown-toggle" style="font-size: 18px; padding:5px" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:20px; padding:5px">
                                     Work
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Resume</a></li>
-                                    <li><a class="dropdown-item" href="#">Cover Letter</a></li>
+                                    <li><a class="dropdown-item" href="#resume">Resume</a></li>
+                                    <li><a class="dropdown-item disabled" href="#" type="button">Cover Letter</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Projects</a></li>
+                                    <li><a class="dropdown-item" href="#projects">Projects</a></li>
                                 </ul>
                             </li>
                             
@@ -105,7 +111,7 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="#start">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Link</a>
@@ -140,8 +146,11 @@
                 <div class = "row justify-content-center">
                     <div class = "col-md-4" style="text-align: left;">
                         <h1 style="font-weight: bold;">Hi, I am Lya Mun.</h1>
-                        <h2 style="padding-bottom: 50px;" >I am an aspiring software developer.</h1>
-                        <button type="submit" class="buttonResume" style="vertical-align:middle"><span>Contact Me</span>
+                        <h2 style="padding-bottom: 0px; font-size:20px;">I am an aspiring software developer.</h2>
+                        <a href="mailto:lyamun2@illinois.edu">
+                            <button type="submit" class="buttonResume" style="margin-top:20px; vertical-align:middle" href="#resume" ><span>Contact Me</span>
+                        </a>
+                        
                     </div>
                     <div class = "col-md-2" style="text-align: right;">
                         <img src="static/images/profileWh.JPG" alt="mini profile" class="center" width=90% height=90% style="border-radius:50%;">
@@ -149,17 +158,60 @@
                 </div>
             </div>
 
+            <div class = "row">
+                <div class="resumeUpdate">
+                    <div class="timeline">
+                        
+                        <p id="resume" style="margin-left:66px; margin-top:40px;font-weight: bold;font-size: 30px;">Resume</p>
+                        <label style="margin-top:0px; margin-bottom: 20px">Work Experience</label>
+                        
+                        
+                        <div class="box">
+                            <div class="resumeContainer justify-content-center">
+                            
+                                <div class="lines">
+                                    <div class="dot"></div>
+                                    <div class="line"></div>
+                                    <div class="dot"></div>
+                                    <div class="line"></div>
+                                    <div class="dot"></div>
+                                    <div class="line"></div>
+                                </div>
+                                
+                                <div class="cards">
+                                    <div class="card">
+                                        <h4>Web Developer Intern <span style="float : right; margin-right:25px; font-weight: normal;">SIESOFT</span> </h4>
+                                        <p>Translated client demands into front-end designs, utilizing Adobe Photoshop and Illustrator to create visual elements</p>
+                                        <hr class="solid">
+                                        <p style="font-size:10px">HTML CSS JAVASCRIPT</p>
+                                    </div>
+                                    <div class="card mid">
+                                        <h4>Programming Project Teacher Assistant <span style="float : right; margin-right:25px; font-weight: normal;">iANT Education</span> </h4>
+                                        <p>Peer-to-peer assistance in areas such as helping with projects
+                                            <br>Created evaluation form every Sundays</p>
+                                        <hr class="solid">
+                                        <p style="font-size:10px">C++</p>
+                                    </div>
+                                    <div class="card">
+                                        <h4>Part-Time Sales Associate <span style="float : right; margin-right:25px; font-weight: normal;">Kyuil Corp.</span>  </h4>
+                                        <p>Consistently exceeded monthly sales targets in The Hyundai Seoul, one of the largest department stores in the capital, utilizing persuasive communication and extensive product knowledge, specializing in Korean traditional rice wine</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="btn">View Full Documented Resume</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+
             <div class="row justify-content-center">
                 <div class="col-md-5">
                     <h1 style="font-style: serif">Design</h1>
-                    <p style="font-weight: normal;"> fostering creativity and identity based on the experince growing up
-                        globally meeting new people new environment aspiring and inspring
-                        what i can bring it to the world
-                        changing the perspective and view just to find the answer of the mystery
-                        fostering creativity and identity based on the experince growing up
-                        globally meeting new people new environment aspiring and inspring
-                        what i can bring it to the world
-                        I have always loved the idea of symbolism putting sometimes complicated and lengthy message into a simple intuitive graphic</p>
+                    <p style="font-weight: normal;"> Woven into the fabric of my global upbringing is a narrative shaped by diverse encounters with varied environments and people. Within this journey, I endeavor to cultivate creativity and carve out a unique identity. Grounded in the simplicity of graphic symbolism, my proficiency in Photoshop and illustration serves as a conduit to distill intricate messages into elegant logos. As I aspire to inspire and contribute a distinctive essence to the world, my body of work reflects a thoughtful blend of creative expressions, shaped by the transformative power of changing perspectives and the pursuit of unraveling the mysteries of existence.</p>
                 </div>
                 <div class="col-md-3">
                     <div class="pt-3 ml-0 mr-0 w3-container">
@@ -173,8 +225,8 @@
                         
                         <div class="w3-center">
                           <div class="w3-section">
-                                <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
-                                <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+                                <button class="w3-button w3-light-grey" onclick="plusDivs(-1)" >❮ Prev</button>
+                                <button class="w3-button w3-light-grey" onclick="plusDivs(1)"  >Next ❯</button>
                             </div>
                         </div>
                     </div>
@@ -186,7 +238,7 @@
                     <div class="skill-bars">
                         <div class="bar">
                           <div class="info">
-                            <span>C++</span>
+                            <span>C/C++</span>
                           </div>
                           <div class="progress-line html">
                             <span></span>
@@ -194,7 +246,7 @@
                         </div>
                         <div class="bar">
                           <div class="info">
-                            <span>CSS</span>
+                            <span>Java</span>
                           </div>
                           <div class="progress-line css">
                             <span></span>
@@ -210,7 +262,7 @@
                         </div>
                         <div class="bar">
                           <div class="info">
-                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
                           </div>
                           <div class="progress-line python">
                             <span></span>
@@ -218,7 +270,7 @@
                         </div>
                         <div class="bar">
                           <div class="info">
-                            <span>JavaScript/Django/JQuery</span>
+                            <span>HTML/CSS</span>
                           </div>
                           <div class="progress-line mysql">
                             <span></span>
@@ -228,22 +280,17 @@
                 </div>
                 <div class="col-md-4">
                     <h1 style="font-style: serif; text-align: right;">Coding</h1>
-                    <p style="font-weight: normal; text-align: right;"> fostering creativity and identity based on the experince growing up
-                        globally meeting new people new environment aspiring and inspring
-                        what i can bring it to the world
-                        changing the perspective and view just to find the answer of the mystery
-                        fostering creativity and identity based on the experince growing up
-                        globally meeting new people new environment aspiring and inspring
-                        what i can bring it to the world
-                        I have always loved the idea of symbolism putting sometimes complicated and lengthy message into a simple intuitive graphic</p>
+                    <p style="font-weight: normal; text-align: right;">
+                        I started coding in elementary school, beginning with C and then exploring different languages. I've become well-versed in Python and developed a keen interest in data science. What excites me the most is data visualization—turning complex information into easy-to-understand visuals. It's like telling a story through charts and graphs, making it simpler for everyone to grasp. My coding journey is all about uncovering insights and presenting them visually.</p>
                 </div>
             </div>
+            
 
             <div class="pt-3 pb-3 row justify-content-center">
-                <h1 style="font-style: serif; text-align: center;">Projects</h1>
-                <div class="col-md-3 ">
+                <h1 id="projects"style="font-style: serif; text-align: center;">Projects</h1>
+                <!-- <div class="col-md-3 ">
                     <div class="pl-0 pr-0 thumb-box">
-                        <a href="">
+                        <a href="https://fldk0804.github.io/projects/">
                         <img src="https://picsum.photos/640/480/?random" alt="">
                             <span class="overlay-box">
                         <span class="meta">Feb 20, 2019</span>
@@ -252,12 +299,12 @@
                             </span>
                         </a>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="col-md-3 ">
                     <div class="thumb-box">
                         <a href="">
-                            <img src="static/images/diceGamePic.png" alt="diceGame">
+                            <img src="static/images/diceGamePic.png" style="height: 220px;"alt="diceGame">
                             <span class="overlay-box">
                         <span class="meta">2019</span>
                         <span class="main-title">Dice Game</span>
@@ -267,7 +314,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <!-- <div class="col-md-3">
                     <div class="thumb-box">
                         <a href="">
                             <img src="https://picsum.photos/640/480/?random" alt="">
@@ -278,7 +325,7 @@
                             </span>
                         </a>
                     </div>
-                </div>
+                </div> -->
 
             </div>
             
@@ -294,22 +341,22 @@
             <div class="row">
                 <div class="col-md-4">
                     <ul>
-                        <img src="static/images/m_ainlogo.png" alt="logo footer" width=30% height=30% style="display: flex; margin-left: auto; margin-right: auto;">
+                        <a href="#start"><img src="static/images/m_ainlogo.png" alt="logo footer" width=30% height=30% style="display: flex; margin-left: auto; margin-right: auto;"></a>
                 </div>
 
                 <div class="col-md-4">
                     <p>Social Media</p>
                     <ul>
-                        <a href="https://www.linkedin.com/in/lya-mun-654582279/" style="color: white; text-decoration: none;" ><i class="fa-brands fa-linkedin fa-3x"></i></a>
-                        <a href="https://github.com/fldk0804" style="color: white; text-decoration: none;" ><i class="fa fa-github fa-3x" aria-hidden="true"></i> </a>
-                        <i class="fa-brands fa-linkedin fa-3x"></i>
+                        <a href="https://www.linkedin.com/in/lya-mun-654582279/" ><svg xmlns="http://www.w3.org/2000/svg" height="46" width="44" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="white" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg> </a>
+                        <a href="https://github.com/fldk0804" > <svg xmlns="http://www.w3.org/2000/svg" height="46" width="45.5" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="white" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg> </a>
+        
                     </ul>
                 </div>
          
                 <div class="col-md-4">
                     <p>Contact</p>
                     <ul>
-                        <li>901 COLLEGE CT <br> TRELEASE HALL 0531B <br> URBANA, IL 61801-9002</li>
+                        <li>901 COLLEGE CT <br> TRELEASE HALL 0531B <br> URBANA, IL USA 61801-9002</li>
                         <li>(213)-431-7939</li>
                         <li>lyamun2@illinois.edu</li>
                     </ul>
