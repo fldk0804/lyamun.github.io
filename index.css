@@ -607,3 +607,18 @@ hr.solid {
   padding-bottom:5px;
   padding-top:5px;
 }
+
+
+@media only screen and (max-width : 480px) {
+  .container-fluid{
+    width: 100%;
+  }
+  /* stillworkingon */
+  #resize {
+    width: 60%;
+  }
+  nav{
+    display: none;
+  }
+
+}
