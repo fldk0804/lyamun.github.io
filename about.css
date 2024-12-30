@@ -1,3 +1,7 @@
 .tab1 {
 	tab-size: 2;
 }
+
+#iframe {
+	background-color: white;
+}
