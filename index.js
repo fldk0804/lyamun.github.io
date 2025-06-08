@@ -1,4 +1,4 @@
-import { Ballpit } from 'https://fldk0804.github.io/lyamun.github.io/ballpit.js';
+import { Ballpit } from 'ballpit.js';
 
 // Initialize Ballpit
 document.addEventListener('DOMContentLoaded', () => {
