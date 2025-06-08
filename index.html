@@ -1,347 +1,393 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Title</title>
-        <!-- Required meta tags -->
-        
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, shrink-to-fit=no, initial-scale=1.0"
-        /> 
 
+<head>
+    <title>Lya Mun</title>
+    <!-- Required meta tags -->
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <script src="https://kit.fontawesome.com/877d2cecdc.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="static/images/m_ainlogo.png">
 
+    <!-- Add jQuery first -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" type="text/css" href="index.css" />
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        
-        
-        <script src="index.js"></script>
+    <!-- Add Three.js -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+            "three/examples/jsm/environments/RoomEnvironment.js": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/environments/RoomEnvironment.js"
+        }
+    }
+    </script>
 
-        <src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></src>
-        <script src="./js/jquery-3.3.1.js"></script>
-        
-    </head>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <body>
-        <header>
-            <div id="start" class="wrap w-100">
-                <nav class="navbar navbar-expand-lg justify-content-center"> 
-                    <div class="col-4 text-center rounded-pill " style="background-color: #333;">
-                        <ul class="d-flex list-unstyled justify-content-center m-0">
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#start" style="font-size:18px; padding:5px">Home</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-2 bg-transparent px-3">
-                        <h1 class="text-center fw-bold figure-img text-primary"><img src="static/images/center.png" style="width:60%; height:60%;"></h1>
-                    </div>
-                    <div class="col-4 text-center rounded-pill" style="background-color: #333;">
-                        <ul class="d-flex list-unstyled justify-content-center m-0">
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="about.html" style="font-size: 18px; padding:5px; padding-right:80px">About</a>
-                            </li>
-                            
-                            <li class="nav-item dropdown">
-                                <a class="nav-link text-white dropdown-toggle" style="font-size: 18px; padding:5px" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:20px; padding:5px">
-                                    Work
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
-                                    <li><a class="dropdown-item" href="static/images/Resume_LyaM.pdf" target="_blank" title="Read PDF" style="color: black">Resume</a></li>
-                                    <li><a class="dropdown-item" href="#projects" style="color: black">Projects</a></li>
-                                </ul>
-                            </li>
-                            
-                            
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script type="module" src="index.js"></script>
+</head>
+
+<body>
+    <main>
+        <header id="start">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#start" style="width: auto; max-width: 100px;">
+                    <img src="static/images/center.png" style="width:100%; height:100%;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#start">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mailto:lyamun2@illinois.edu">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Work
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="static/images/Resume_LyaM.pdf"
+                                        target="_blank">Resume</a></li>
+                                <li><a class="dropdown-item" href="#projects">Projects</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </header>
-        
-        <main>
-            <div class = "pt-5 pb-5 container-fluid"> 
-                <div class = "row justify-content-center">
-                    <div class = "col-4 col-md-4" style="text-align: left;">
-                        <h1 style="font-weight: bold;">Hi, I am Lya Mun.</h1>
-                        <h2 style="padding-bottom: 0px; font-size:20px;">I am an aspiring software developer.</h2>
-                        <a href="mailto:lyamun2@illinois.edu">
-                            <button type="submit" class="buttonResume" style="margin-top:20px; vertical-align:middle" href="#resume" ><span>Contact Me</span>
+        <!-- Add Ballpit component -->
+        <div class="container-fluid">
+            <div id="ballpit-container"
+                style="position: relative; overflow: hidden; height: 600px; width: 100%; background: #fff; display: flex; align-items: center; justify-content: center;">
+                <div
+                    style="position: relative; top: -80px; display: flex; flex-direction: row; align-items: center; justify-content: center; width: 50%; max-width: 1200px; padding: 20px; gap: 20px;">
+                    <div style="flex: 1; text-align: left;">
+                        <h1 style="font-weight: bold; color: #333;">Hi, I am Lya Mun.</h1>
+                        <h2 style="padding-bottom: 0px; font-size:20px; color: #555;">I am an aspiring software
+                            engineer.</h2>
+                    </div>
+                    <div style="flex: 0 0 auto; text-align: right;">
+                        <img src="static/images/profileWh.JPG" alt="mini profile" width="150px" height="150px"
+                            style="border-radius:50%;">
+                    </div>
+                </div>
+                <canvas id="ballpit-canvas"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block;"
+                    data-engine="three.js r160" width="2932" height="1600"></canvas>
+            </div>
+        </div>
+
+        <div class="container-fluid justify-content-center">
+            <h1 id="projects" style="font-style: serif; text-align: center;">Projects</h1>
+            <div class="pt-5 pb-5 row justify-content-center">
+
+                <div class="col-8 col-md-8">
+                    <div class="projects-container">
+                        <a href="https://github.com/fldk0804/subleaseFinder" target="_blank"
+                            style="text-decoration: none;">
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <div class="project-icon-container">
+                                        <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <h3 class="project-title">Sublease Finder iOS App</h3>
+                                    <p class="project-description">SwiftUI, MapKit, Firebase Auth, Xcode, UIKit</p>
+                                </div>
+                            </div>
                         </a>
-                        
-                    </div>
-                    <div class = "col-2 col-md-2" style="text-align: right;">
-                        <a href="https://www.linkedin.com/in/lya-mun-654582279/"><img src="static/images/profileWh.JPG" alt="mini profile" width=150px height=150px style="border-radius:50%;"></a>
-                    </div>
-                </div>
-            </div>
-            <div class = "container-fluid">
-                <div class = "row">
-                    <div class="resumeUpdate">
-                        <div class="timeline">
-                            
-                            <p id="resume" style="margin-left:66px; margin-bottom:80px; margin-top:60px;font-weight: bold;font-size: 30px;">Resume</p>
-                            
-                            
-                            
-                            <div class="box">
-                                <div class="resumeContainer justify-content-center">
-                                
-                                    <div class="lines">
-                                        <div class="dot"></div>
-                                        <div class="line"></div>
-                                        <div class="dot"></div>
-                                        <div class="line"></div>
-                                        <div class="dot"></div>
-                                        <div class="line"></div>
-                                    </div>
-                                    
-                                    <div class="cards">
-                                        <div class="card">
-                                            <h4 style="font-size:16px">Research Assistant@UIUC<span style="font-size:16px; float : right; margin-right:25px; font-weight: normal;">Individual Cattle Face Identification Using Computer Vision</span> </h4>
-                                            <p style="font-size:12px"> Built YOLOv8 detection and classification models using 200 top-view images, achieving near-perfect accuracy in identifying 133 cattle IDs across diverse datasets to improve livestock management for small-scale farmers</p>
-                                            <hr class="solid">
-                                            <p style="font-size:10px">Python, Colab, Docker, Label Studio</p>
-                                        </div>
-                                        <div class="card mid">
-                                            <h4 style="font-size:16px">Software/Research Engineer Intern <span style="font-size:16px; float : right; margin-right:25px; font-weight: normal;">Quve17</span> </h4>
-                                            <p style="font-size:12px">Enhanced neural network algorithms for automatic dental crown design and feature extraction
-                                            <br/>Developed an Importance-Performance Analysis (IPA) algorithm in Java for the dental patient feedback platform</p>
-                                            <hr class="solid">
-                                            <p style="font-size:10px">Python, IBM SPSS, Meshmixer, Visual Studio Code</p>
-                                        </div>
-                                        <div class="card">
-                                            <h4 style="font-size:16px">Web Developer Intern <span style="font-size:16px; float : right; margin-right:25px; font-weight: normal;">SIESOFT</span> </h4>
-                                            <p style="font-size:12px">Translated client requirements into innovative front-end designs using Adobe Photoshop and Illustrator, and executed them to create engaging user interfaces; Improved real-world applications through focused frontend design</p>
-                                            <hr class="solid">
-                                            <p style="font-size:10px">HTML/CSS, JavaScript</p>
-                                        </div>
+                        <a href="https://github.com/fldk0804/stock_predict" target="_blank"
+                            style="text-decoration: none;">
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <div class="project-icon-container">
+                                        <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5">
+                                            </path>
+                                        </svg>
                                     </div>
                                 </div>
-
-                                <a href="static/images/Resume_LyaM.pdf" target="_blank" title="Read PDF">
-                                    <div class="bottom">
-                                        <div class="btn" style = "font-size:18px">Full Documented Resume</div>
-                                    </div>
-                                </a>
-                            </div>
-                            
-                        </div>
-                    </div>
-    
-                </div>
-            </div>
-            
-            <div class = "container-fluid justify-content-center">
-                <div class="row justify-content-center">
-                    <div class="col-8 col-md-5">
-                        <h1 style="font-style: serif">Design</h1>
-                        <p style="font-weight: normal;"> Since I was young, I've had a passion for creating logos that carry deep meanings. With my Graphic Technology Qualification (GTQ) in Adobe Photoshop, I've enjoyed diving into web development and UI/UX design as hobbies. My website's logo, featuring a tree intertwined with characters from my name, reflects my identity as someone resilient and endless. It's a simple yet heartfelt representation of who I am, symbolizing growth and strength.</p>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="pt-3 ml-0 mr-0 w3-container">
-                            <div class="containter justify-content-center">
-                              <img class="mySlides" src="static/images/center.png" style="width:200px; height:200px;">
-                              <img class="mySlides" src="static/images/GCISeaForecasting-LyaMun.png" style="width:200px; height:200px;">
-                              <img class="mySlides" src="static/images/GCI-LyaMun.svg" style="width:200px; height:200px;">
-                              <img class="mySlides" src="static/images/semi.png" style="width:200px; height:200px;">
-                              <img class="mySlides" src="static/images/FnanthonyCrest.svg" style="width:200px; height:200px;">
-                            </div>
-                            
-                            <div class="w3-center">
-                              <div class="w3-section">
-                                    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)" >❮</button>
-                                    <button class="w3-button w3-light-grey" onclick="plusDivs(1)"  >❯</button>
+                                <div class="project-content">
+                                    <h3 class="project-title">Stock Price Prediction Website</h3>
+                                    <p class="project-description">React, FastAPI, Python, Alpha Vantage API, GitHub
+                                        Pages</p>
                                 </div>
                             </div>
-                        </div>
+                        </a>
+                        <!-- First Row -->
+                        <a href="https://fldk0804.github.io/projects/" target="_blank" style="text-decoration: none;">
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <div class="project-icon-container">
+                                        <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <h3 class="project-title">Spin Launch Website</h3>
+                                    <p class="project-description">Engineering Open House (EOH)</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://fldk0804.github.io/diceGame/" target="_blank" style="text-decoration: none;">
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <div class="project-icon-container">
+                                        <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <h3 class="project-title">Dice Game</h3>
+                                    <p class="project-description">HTML, CSS, JavaScript</p>
+                                </div>
+                            </div>
+                        </a>
+
+
                     </div>
                 </div>
             </div>
-            
+        </div>
 
-            <div class = "container-fluid justify-content-center">
-                <div class="pt-5 pb-5 row justify-content-center">
-                    <div class="col-4 col-md-4">
-                        <div class="skill-bars">
-                            <div class="bar">
-                              <div class="info">
+        <div class="container-fluid justify-content-center">
+            <div class="row justify-content-center">
+                <div class="col-4 col-md-3">
+                    <h1 style="font-style: serif">Programming</h1>
+                    <p style="font-weight: normal;"> I'm a junior at the University of Illinois at Urbana-Champaign,
+                        studying Computer Science and Advertising with a certificate in Data Science.
+                        I'm especially interested in software development and machine learning. </p>
+                </div>
+                <div class="col-4 col-md-4">
+                    <div class="skill-bars">
+                        <div class="bar">
+                            <div class="info">
                                 <span>C/C++</span>
-                              </div>
-                              <div class="progress-line html">
-                                <span></span>
-                              </div>
                             </div>
-                            <div class="bar">
-                              <div class="info">
+                            <div class="progress-line html">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
                                 <span>Java</span>
-                              </div>
-                              <div class="progress-line css">
-                                <span></span>
-                              </div>
                             </div>
-                            <div class="bar">
-                              <div class="info">
+                            <div class="progress-line css">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
                                 <span>Python</span>
-                              </div>
-                              <div class="progress-line jquery">
-                                <span></span>
-                              </div>
                             </div>
-                            <div class="bar">
-                              <div class="info">
+                            <div class="progress-line jquery">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
                                 <span>JavaScript</span>
-                              </div>
-                              <div class="progress-line python">
-                                <span></span>
-                              </div>
                             </div>
-                            <div class="bar">
-                              <div class="info">
+                            <div class="progress-line python">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
                                 <span>HTML/CSS</span>
-                              </div>
-                              <div class="progress-line mysql">
-                                <span></span>
-                              </div>
                             </div>
-                          </div>
-                    </div>
-                    <div class="col-4 col-md-4">
-                        <h1 style="font-style: serif; text-align: right;">Coding</h1>
-                        <p style="font-weight: normal; text-align: right;">Beyond my studies in Information Sciences + Data Science at the University of Illinois, I'm deeply engaged in software development and data visualization. With prior experience in frontend development, I'm enthusiastic about delving into backend development and algorithms. I aim for a well-rounded skill set, including version control and innovation in software development.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class = "container-fluid">
-                <div class="pt-3 pb-5 row justify-content-center">
-                    <h1 id="projects" style="font-style: serif; text-align: center;">Projects</h1>
-                    <div class="col-3 col-md-3 ">
-                        <div class="thumb-box">
-                            <a href="https://fldk0804.github.io/projects/">
-                                <img src="static/images/process6.jpeg" style="height: 220px;"alt="diceGame">
-                                <span class="overlay-box">
-                            <span class="meta">2024</span>
-                            <span class="main-title">Spin Launch</span>
-                            <span class="description">Engineering Open House (EOH)</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-    
-                    <div class="col-3 col-md-3 ">
-                        <div class="thumb-box">
-                            <a href="https://fldk0804.github.io/diceGame/">
-                                <img src="static/images/diceGamePic.png" style="height: 220px;"alt="diceGame">
-                                <span class="overlay-box">
-                            <span class="meta">2019</span>
-                            <span class="main-title">Dice Game</span>
-                            <span class="description">HTML CSS JavaScript</span>
-                                </span>
-                            </a>
+                            <div class="progress-line mysql">
+                                <span></span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
 
-        <footer>
-            <div class = "container-fluid">
-                <div class="row">
-                    <div class="col-3 col-md-4">
-                        <a href="#start"><img src="static/images/m_ainlogo.png" alt="logo footer" width=100px height=100px style="display: flex; margin-left: auto; margin-right: auto;"></a>
-                    </div>
-    
-                    <div class="col-3 col-md-4">
-                        <p>Social Media</p>
-                        <ul>
-                            <a href="https://www.linkedin.com/in/lya-mun-654582279/" ><svg xmlns="http://www.w3.org/2000/svg" height="46" width="44" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="white" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg> </a>
-                            <a href="https://github.com/fldk0804" > <svg xmlns="http://www.w3.org/2000/svg" height="46" width="45.5" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="white" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg> </a>
-            
-                        </ul>
-                    </div>
-             
-                    <div class="col-3 col-md-4">
-                        <p>Contact</p>
-                        <ul>
-                            <li>901 COLLEGE CT <br> TRELEASE HALL 0531B <br> URBANA, IL USA 61801-9002</li>
-                            <li>(213)-431-7939</li>
-                            <li>lyamun2@illinois.edu</li>
-                        </ul>
+        <div class="container-fluid mt-3 mb-3">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-3 text-start">
+                    <h2 style="font-style: serif; margin-bottom: 30px;">Connect with me!</h2>
+                    <p style="font-weight: normal;">Click on the folder to see my other platforms.</p>
+                    <a href="mailto:lyamun2@illinois.edu">
+                        <button type="submit" class="buttonResume" style="margin-top:20px; vertical-align:middle">
+                            <span>Contact Me</span>
+                        </button>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <div
+                        style="height: 500px; position: relative; display: flex; justify-content: center; align-items: center;">
+                        <div class="folder-container">
+                            <div class="folder">
+                                <div class="folder__back">
+                                    <div class="paper paper-1">
+                                        <a href="https://www.linkedin.com/in/lya-mun-654582279/"><svg
+                                                xmlns="http://www.w3.org/2000/svg" height="46" width="44"
+                                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path fill="black"
+                                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                                            </svg> </a>
+                                    </div>
+                                    <div class="paper paper-2">
+                                        <a href="https://github.com/fldk0804"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                height="46" width="45.5"
+                                                viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path fill="black"
+                                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                            </svg> </a>
+                                    </div>
+                                    <div class="paper paper-3">
+                                        <a href="https://github.com/fldk0804"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                height="46" width="45.5"
+                                                viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path fill="Black"
+                                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                            </svg> </a>
+                                    </div>
+                                    <div class="folder__front"></div>
+                                    <div class="folder__front right"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        
+        </div>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
+        </div>
+    </main>
 
-        <script>
-            var myIndex = 0;
-            carousel();
 
-            function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
-            }
-            myIndex++;
-            if (myIndex > x.length) {myIndex = 1}    
-            x[myIndex-1].style.display = "block";  
-            setTimeout(carousel, 3000); // Change image every 2 seconds
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        // Folder interaction
+        document.querySelector('.folder').addEventListener('click', function () {
+            this.classList.toggle('open');
+        });
+
+        // Card carousel functionality with smooth transitions
+        document.querySelectorAll('.card-carousel').forEach(carousel => {
+            const track = carousel.querySelector('.card-track');
+            const slides = carousel.querySelectorAll('.card-slide');
+            const indicators = carousel.querySelectorAll('.card-indicator');
+            let currentIndex = 0;
+            let startX = 0;
+            let currentX = 0;
+            let isDragging = false;
+
+            // Touch and mouse event handlers
+            track.addEventListener('mousedown', startDrag);
+            track.addEventListener('touchstart', startDrag);
+            track.addEventListener('mousemove', drag);
+            track.addEventListener('touchmove', drag);
+            track.addEventListener('mouseup', endDrag);
+            track.addEventListener('touchend', endDrag);
+            track.addEventListener('mouseleave', endDrag);
+
+            function startDrag(e) {
+                isDragging = true;
+                startX = e.type === 'mousedown' ? e.pageX : e.touches[0].pageX;
+                track.style.transition = 'none';
             }
 
-            var slideIndex = myIndex;
-            showDivs(slideIndex);
-            
-            function plusDivs(n) {
-              showDivs(slideIndex += n);
+            function drag(e) {
+                if (!isDragging) return;
+                e.preventDefault();
+                currentX = e.type === 'mousemove' ? e.pageX : e.touches[0].pageX;
+                const diff = currentX - startX;
+                track.style.transform = `translateX(${diff}px)`;
             }
-            
-            function currentDiv(n) {
-              showDivs(slideIndex = n);
+
+            function endDrag() {
+                if (!isDragging) return;
+                isDragging = false;
+                const diff = currentX - startX;
+                const threshold = track.offsetWidth * 0.2;
+
+                if (Math.abs(diff) > threshold) {
+                    if (diff > 0 && currentIndex > 0) {
+                        currentIndex--;
+                    } else if (diff < 0 && currentIndex < slides.length - 1) {
+                        currentIndex++;
+                    }
+                }
+
+                updateCarousel();
             }
-            
-            function showDivs(n) {
-              var i;
-              var x = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("demo");
-              if (n > x.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = x.length}
-              for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
-              }
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" w3-red", "");
-              }
-              x[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " w3-red";
+
+            function updateCarousel() {
+                track.style.transition = 'transform 0.3s ease-out';
+                const translateX = -currentIndex * 100;
+                track.style.transform = `translateX(${translateX}%)`;
+
+                // Update indicators
+                indicators.forEach((indicator, index) => {
+                    indicator.classList.toggle('active', index === currentIndex);
+                });
+
+                // Reset position if we've reached the end
+                if (currentIndex >= slides.length) {
+                    setTimeout(() => {
+                        track.style.transition = 'none';
+                        currentIndex = 0;
+                        track.style.transform = 'translateX(0)';
+                        indicators.forEach((indicator, index) => {
+                            indicator.classList.toggle('active', index === currentIndex);
+                        });
+                    }, 300);
+                }
             }
-            
-        </script>
-    </body>
+
+            // Indicator click handlers
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateCarousel();
+                });
+            });
+
+            // Initialize carousel
+            updateCarousel();
+        });
+    </script>
+</body>
+
 </html>

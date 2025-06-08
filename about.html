@@ -1,130 +1,223 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Title</title>
-        <!-- Required meta tags -->
-        
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        /> 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-        <script src="about.js"></script>
 
-        <link rel="stylesheet" type="text/css" href="about.css" />
-        <link rel="stylesheet" type="text/css" href="index.css" />
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></src>
-        <script src="./js/jquery-3.3.1.js"></script>
-        
-    </head>
+<head>
+    <title>Lya Mun</title>
+    <!-- Required meta tags -->
 
-    <body>
-        <header>
-            <div class="wrap w-100">
-                <div class="row align-items-center m-0 d-none d-md-flex justify-content-center">
-                    <div class="col-4 text-center rounded-pill " style="background-color: #333;">
-                        <ul class="d-flex list-unstyled justify-content-center m-0">
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="index.html" style="font-size:18px; padding:5px">Home</a>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="static/images/m_ainlogo.png">
+
+    <!-- Add jQuery first -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="about.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script type="module" src="about.js"></script>
+</head>
+
+<body>
+    <header id="start">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html" style="width: auto; max-width: 100px;">
+                <img src="static/images/center.png" style="width:100%; height:100%;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto:lyamun2@illinois.edu">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Work
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="static/images/Resume_LyaM.pdf" target="_blank">Resume</a>
                             </li>
+                            <li><a class="dropdown-item" href="index.html#projects">Projects</a></li>
                         </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="content-container">
+        <div class="timeline">
+            <div class="timeline-month">
+                Timeline
+                <span>Education</span>
+            </div>
+            <div class="timeline-sections-container">
+                <div class="timeline-section">
+                    <div class="timeline-date">
+                        2023 - 2027
                     </div>
-                    <div class="col-2 bg-transparent px-3">
-                        <h1 class="text-center fw-bold figure-img text-primary"><img src="static/images/center.png" style="width:60%; height:60%;"></h1>
+                    <div class="timeline-box">
+                        <div class="box-title">
+                            <i class="fa fa-graduation-cap text-success" aria-hidden="true"></i> University of Illinois
+                            Urbana-Champaign
+                        </div>
+                        <div class="box-content">
+                            <div class="box-item"><strong>Degree</strong>: Bachelor of Computer Science and Advertising
+                            </div>
+                            <div class="box-item"><strong>GPA</strong>: 3.8/4.0</div>
+                        </div>
+                        <div class="box-footer">Champaign, Illinois</div>
                     </div>
-                    <div class="col-4 text-center rounded-pill" style="background-color: #333;">
-                        <ul class="d-flex list-unstyled justify-content-center m-0">
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#" style="font-size: 18px; padding:5px; padding-right:80px">About</a>
-                            </li>
-                            
-                            <li class="nav-item dropdown">
-                                <a class="nav-link text-white dropdown-toggle" style="font-size: 18px; padding:5px" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:20px; padding:5px">
-                                    Work
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="static/images/Resume_LyaM.pdf" target="_blank" title="Read PDF">Resume</a></li>
-                                    <li><a class="dropdown-item" href="index.html">Projects</a></li>
-                                </ul>
-                            </li>
-                            
-                        </ul>
+                </div>
+
+                <div class="timeline-section">
+                    <div class="timeline-date">
+                        2019 - 2023
+                    </div>
+                    <div class="timeline-box">
+                        <div class="box-title">
+                            <i class="fa fa-graduation-cap text-info" aria-hidden="true"></i> Maranatha High School
+                        </div>
+                        <div class="box-footer">Pasadena, California</div>
                     </div>
                 </div>
             </div>
-        </header>
-        <main>
-            <div class = "pt-5 pb-5 container-fluid"> 
-                <div class = "row justify-content-center">
-                    <div class = "col-md-4" style="text-align: left;">
-                        <h1 style="font-weight: bold;">Hi, I am Lya Mun.</h1>
-                        <h2 style="padding-bottom: 0px; font-size:20px;">I am an aspiring software developer.</h2>
-                        <p style="font-weight:normal; font-size: 15px">Born in Seoul, South Korea, I embarked on my journey of studying abroad at the age of 12, attending middle school in Rhode Island, USA. My passion for coding ignited through my love for Minecraft. Experimenting with command lines on command blocks sparked my curiosity, leading me to wonder if I could create a game like Minecraft myself.
-                            <br>
-                            Thus, my coding journey began in middle school, where I delved into learning C and subsequently expanded my repertoire to include C++, web development languages, Python, and more. Witnessing lines of code transform my imaginative concepts into functioning reality was nothing short of mesmerizing.</p>
-                        
+        </div>
+
+        <div class="blog-section">
+            <div class="blog-container">
+                <div class="blog-header">
+                    <div class="blog-cover">
+
                     </div>
-                    <div class = "col-md-2" style="text-align: right;">
-                        <a href="https://www.linkedin.com/in/lya-mun-654582279/"><img src="static/images/profileWh.JPG" alt="mini profile" class="center" width=150px height=150px style="border-radius:50%;"></a>
-                    </div>
-                </div>
-                <div class = "row justify-content-center">
-                    <a href="mailto:lyamun2@illinois.edu">
-                        <button type="submit" class="buttonResume" style="width:200px; justify-content: center; margin-top:20px; vertical-align:middle" href="#resume" ><span>Contact Me</span>
-                    </a>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <div class="row">
-                <div class="col-md-4">
-                    <ul>
-                        <a href="index.html"><img src="static/images/m_ainlogo.png" alt="logo footer" width=30% height=30% style="display: flex; margin-left: auto; margin-right: auto;"></a>
                 </div>
 
-                <div class="col-md-4">
-                    <p>Social Media</p>
+                <div class="blog-body">
+                    <div class="blog-title">
+                        <h1><a href="#">Self-Supervised Learning for Multimodal Time-Series Signals</a></h1>
+                    </div>
+                    <div class="blog-summary">
+                        <p>● Built a self-supervised pipeline for human activity recognition using multimodal
+                            time-series signals from IoT devices</p>
+                        <p>● Pretrained a ViT-based Masked Autoencoder (MAE) using unlabeled sensor data with as little
+                            as 1% labeled input</p>
+                        <p> ● Matched fully supervised model performance within 10% using 99% fewer labeled samples
+                            across 12 sensor classes</p>
+                        <p>● Demonstrated 4× faster training per epoch during fine-tuning compared to end-to-end
+                            supervised learning</p>
+                    </div>
+
+                </div>
+
+                <div class="blog-footer">
                     <ul>
-                        <a href="https://www.linkedin.com/in/lya-mun-654582279/" ><svg xmlns="http://www.w3.org/2000/svg" height="46" width="44" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="white" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg> </a>
-                        <a href="https://github.com/fldk0804" > <svg xmlns="http://www.w3.org/2000/svg" height="46" width="45.5" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="white" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg> </a>
-        
+                        <li class="published-date">Python</li>
+                        <li class="published-date">PyTorch</li>
+                        <li class="published-date">TensorFlow</li>
                     </ul>
                 </div>
-         
-                <div class="col-md-4">
-                    <p>Contact</p>
+            </div>
+
+            <div class="blog-container">
+                <div class="blog-header">
+
+                </div>
+
+                <div class="blog-body">
+                    <div class="blog-title">
+                        <h1><a href="#">Individual Cattle Face Identification Using Computer Vision</a></h1>
+                    </div>
+                    <div class="blog-summary">
+                        <p>● Built YOLOv8 models to detect and classify 133 cattle with near-perfect accuracy using 200
+                            top-view images</p>
+                        <p>● Reduced annotation errors by 40% by automating image labeling with Label Studio and
+                            refining bounding boxes</p>
+                        <p> ● Boosted model robustness by 10× data scaling with rotation and Gaussian noise augmentation
+                        </p>
+                        <p> ● Enhanced classification of visually similar cattle by 60% through dataset/labelling
+                            improvements</p>
+                    </div>
+
+                </div>
+
+                <div class="blog-footer">
                     <ul>
-                        <li>901 COLLEGE CT <br> TRELEASE HALL 0531B <br> URBANA, IL USA 61801-9002</li>
-                        <li>(213)-431-7939</li>
-                        <li>lyamun2@illinois.edu</li>
+                        <li class="published-date">Python</li>
+                        <li class="published-date">PyTorch</li>
+                        <li class="published-date">OpenCV</li>
                     </ul>
                 </div>
             </div>
-        </footer>
+        </div>
+    </div>
+    <!-- <div class="gallery-container">
+        <div class="gallery-gradient gallery-gradient-left"></div>
+        <div class="gallery-gradient gallery-gradient-right"></div>
+        <div class="gallery-content">
+            <div class="gallery-track">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?q=80&w=3870&auto=format&fit=crop"
+                        alt="gallery" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?q=80&w=3870&auto=format&fit=crop"
+                        alt="gallery" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=3456&auto=format&fit=crop"
+                        alt="gallery" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1495103033382-fe343886b671?q=80&w=3870&auto=format&fit=crop"
+                        alt="gallery" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1506781961370-37a89d6b3095?q=80&w=3264&auto=format&fit=crop"
+                        alt="gallery" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1599576838688-8a6c11263108?q=80&w=3870&auto=format&fit=crop"
+                        alt="gallery" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1494094892896-7f14a4433b7a?q=80&w=3870&auto=format&fit=crop"
+                        alt="gallery" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://plus.unsplash.com/premium_photo-1664910706524-e783eed89e71?q=80&w=3869&auto=format&fit=crop"
+                        alt="gallery" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1503788311183-fa3bf9c4bc32?q=80&w=3870&auto=format&fit=crop"
+                        alt="gallery" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1585970480901-90d6bb2a48b5?q=80&w=3774&auto=format&fit=crop"
+                        alt="gallery" class="gallery-img">
+                </div>
+            </div>
+        </div>
+    </div> -->
 
-        <!-- Bootstrap JavaScript Libraries -->
-  
-        <script src="https://kit.fontawesome.com/bfdbe72e25.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
 </html>
