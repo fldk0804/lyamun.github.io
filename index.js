@@ -1,4 +1,4 @@
-import { Ballpit } from './ballpit.js';
+import { Ballpit } from 'ballpit.js';
 
 // Initialize Ballpit
 document.addEventListener('DOMContentLoaded', () => {
