@@ -83,3 +83,25 @@ Feel free to reach out to me at [lyamun2@illinois.edu](mailto:lyamun2@illinois.e
 ## 📄 License
 
 This project is open source and available under the MIT License.
+
+## Acknowledgments
+
+- Built with the help of [GPT Cursor](https://cursor.sh/) - An AI-powered code editor that helped with development and debugging
+- Inspired by [ReactBits](https://www.reactbits.dev/) - A collection of React patterns, techniques, tips, and tricks
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## Deployment
+
+The website is deployed using GitHub Pages and can be accessed at [https://fldk0804.github.io/website/](https://fldk0804.github.io/website/)
