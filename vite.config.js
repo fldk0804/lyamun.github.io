@@ -4,7 +4,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
     plugins: [react()],
-    base: '/lyamun.github.io/',
+    base: '/website/',
     build: {
         outDir: 'dist',
         assetsDir: 'assets',
