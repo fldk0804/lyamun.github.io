@@ -15,7 +15,12 @@ export default defineConfig({
                 about: resolve(__dirname, 'about.html')
             },
             output: {
-                assetFileNames: 'assets/[name]-[hash][extname]',
+                assetFileNames: (assetInfo) => {
+                    if (assetInfo.name === 'Resume_LyaM.pdf') {
+                        return 'assets/[name][extname]';
+                    }
+                    return 'assets/[name]-[hash][extname]';
+                },
                 chunkFileNames: 'assets/[name]-[hash].js',
                 entryFileNames: 'assets/[name]-[hash].js'
             }
