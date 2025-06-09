@@ -6,7 +6,7 @@
     <!-- Required meta tags -->
 
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="icon" type="image/x-icon" href="./static/images/m_ainlogo.png">
 
     <!-- Add jQuery first -->
@@ -31,6 +31,58 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <script type="module" src="./index.js"></script>
+
+    <style>
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            .container-fluid {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            #ballpit-container {
+                height: 400px !important;
+            }
+
+            .col-8.col-md-8 {
+                width: 100%;
+                padding: 0 15px;
+            }
+
+            .project-card {
+                margin-bottom: 20px;
+            }
+
+            .skill-bars {
+                width: 100%;
+            }
+
+            .folder-container {
+                transform: scale(0.8);
+            }
+        }
+
+        /* Ensure content is properly scaled on all devices */
+        html,
+        body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Make sure images are responsive */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Adjust container widths for better mobile display */
+        .container-fluid {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+    </style>
 </head>
 
 <body>
@@ -74,15 +126,17 @@
             <div id="ballpit-container"
                 style="position: relative; overflow: hidden; height: 600px; width: 100%; background: #fff; display: flex; align-items: center; justify-content: center;">
                 <div
-                    style="position: relative; top: -80px; display: flex; flex-direction: row; align-items: center; justify-content: center; width: 50%; max-width: 1200px; padding: 20px; gap: 20px;">
+                    style="position: relative; top: -80px; display: flex; flex-direction: row; align-items: center; justify-content: center; width: 90%; max-width: 1200px; padding: 20px; gap: 20px;">
                     <div style="flex: 1; text-align: left;">
-                        <h1 style="font-weight: bold; color: #333;">Hi, I am Lya Mun.</h1>
-                        <h2 style="padding-bottom: 0px; font-size:20px; color: #555;">I am an aspiring software
+                        <h1 style="font-weight: bold; color: #333; font-size: clamp(24px, 5vw, 36px);">Hi, I am Lya Mun.
+                        </h1>
+                        <h2 style="padding-bottom: 0px; font-size: clamp(16px, 3vw, 20px); color: #555;">I am an
+                            aspiring software
                             engineer.</h2>
                     </div>
                     <div style="flex: 0 0 auto; text-align: right;">
                         <img src="./static/images/profileWh.JPG" alt="mini profile" width="150px" height="150px"
-                            style="border-radius:50%;">
+                            style="border-radius:50%; max-width: 100%;">
                     </div>
                 </div>
                 <canvas id="ballpit-canvas"
