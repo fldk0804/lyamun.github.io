@@ -659,14 +659,27 @@ hr.solid {
 
 .navbar {
   padding: 0 50px;
-  /* Add horizontal padding to the navbar container */
+  width: 100%;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.navbar-brand img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
 }
 
 .navbar-nav {
   margin-left: auto;
-  /* Push nav items to the right */
   padding-right: 30px;
-  /* Add space on the right */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .nav-link {
@@ -674,7 +687,26 @@ hr.solid {
   text-align: center;
   display: inline-block;
   margin: 0 15px;
-  /* Add space between nav items */
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .navbar-nav {
+    padding-right: 0;
+  }
+
+  .nav-link {
+    min-width: auto;
+    margin: 0 10px;
+  }
+
+  .navbar-brand {
+    margin-right: 1rem;
+  }
 }
 
 /* Folder Component Styles */
@@ -831,7 +863,7 @@ hr.solid {
 /* Projects Container */
 .projects-container {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   border-radius: 24px;
   padding: 16px;
   --outer-r: 24px;
@@ -843,6 +875,7 @@ hr.solid {
   justify-content: center;
   flex-wrap: nowrap;
 }
+
 
 .projects-container a {
   display: flex;
@@ -991,4 +1024,74 @@ hr.solid {
 .container-fluid:has(#projects) {
   margin-top: 80px;
   margin-bottom: 80px;
+}
+
+.project-row-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 15px;
+  width: 100%;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.project-row-card {
+  flex: 0 0 calc(50% - 15px);
+  min-width: 200px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.project-row-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-row-header {
+  padding: 15px 15px 0 15px;
+}
+
+.project-row-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-row-content {
+  padding: 15px;
+}
+
+.project-row-title {
+  font-size: 1.1rem;
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+.project-row-description {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .project-row-container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .project-row-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .project-row-card {
+    flex: 0 0 85%;
+    min-width: 280px;
+  }
 }

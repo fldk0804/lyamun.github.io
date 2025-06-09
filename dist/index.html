@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Lya Mun</title>
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/m_ainlogo-DhjZ6Zft.png">
+
+    <!-- Add jQuery first -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Add Three.js -->
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+            "three/examples/jsm/environments/RoomEnvironment.js": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/environments/RoomEnvironment.js"
+        }
+    }
+    </script>
+  <script type="module" crossorigin src="/assets/index-BMWG8cyZ.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-D6U-5ZmT.css">
+</head>
+
+<body>
+    <main>
+        <header id="start">
+            <nav class="navbar navbar-expand navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#start"
+                        style="width: auto; max-width: 100px; display: flex; align-items: center;">
+                        <img src="/assets/center-DkmTG3Dr.png" style="width:80%; height:80%; object-fit: contain;">
+                    </a>
+                    <div class="navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#start">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mailto:lyamun2@illinois.edu">Contact</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Work
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="static/images/Resume_LyaM.pdf"
+                                            target="_blank">Resume</a></li>
+                                    <li><a class="dropdown-item" href="#projects">Projects</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Add Ballpit component -->
+        <div class="container-fluid">
+            <div id="ballpit-container"
+                style="position: relative; overflow: hidden; height: 600px; width: 100%; background: #fff; display: flex; align-items: center; justify-content: center;">
+                <div
+                    style="position: relative; top: -80px; display: flex; flex-direction: row; align-items: center; justify-content: center; width: 50%; max-width: 1200px; padding: 20px; gap: 20px;">
+                    <div style="flex: 1; text-align: left;">
+                        <h1 style="font-weight: bold; color: #333;">Hi, I am Lya Mun.</h1>
+                        <h2 style="padding-bottom: 0px; font-size:20px; color: #555;">I am an aspiring software
+                            engineer.</h2>
+                    </div>
+                    <div style="flex: 0 0 auto; text-align: right;">
+                        <img src="/assets/profileWh-D1q1yXfX.JPG" alt="mini profile" width="150px" height="150px"
+                            style="border-radius:50%;">
+                    </div>
+                </div>
+                <canvas id="ballpit-canvas"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block;"
+                    data-engine="three.js r160" width="2932" height="1600"></canvas>
+            </div>
+        </div>
+
+        <div class="container-fluid justify-content-center">
+            <h1 id="projects" style="font-style: serif; text-align: center;">Projects</h1>
+            <div class="pt-5 pb-5 row justify-content-center">
+
+                <div class="col-8 col-md-8">
+                    <div class="projects-container">
+                        <a href="https://github.com/fldk0804/subleaseFinder" target="_blank"
+                            style="text-decoration: none;">
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <div class="project-icon-container">
+                                        <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <h3 class="project-title">Sublease Finder iOS App</h3>
+                                    <p class="project-description">SwiftUI, MapKit, Firebase Auth, Xcode, UIKit</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://github.com/fldk0804/stock_predict" target="_blank"
+                            style="text-decoration: none;">
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <div class="project-icon-container">
+                                        <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <h3 class="project-title">Stock Price Prediction Website</h3>
+                                    <p class="project-description">React, FastAPI, Python, Alpha Vantage API, GitHub
+                                        Pages</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- First Row -->
+                        <a href="https://fldk0804.github.io/projects/" target="_blank" style="text-decoration: none;">
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <div class="project-icon-container">
+                                        <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <h3 class="project-title">Spin Launch Website</h3>
+                                    <p class="project-description">Engineering Open House (EOH)</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://fldk0804.github.io/diceGame/" target="_blank" style="text-decoration: none;">
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <div class="project-icon-container">
+                                        <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <h3 class="project-title">Dice Game</h3>
+                                    <p class="project-description">HTML, CSS, JavaScript</p>
+                                </div>
+                            </div>
+                        </a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid justify-content-center">
+            <div class="row justify-content-center">
+                <div class="col-4 col-md-3">
+                    <h1 style="font-style: serif">Programming</h1>
+                    <p style="font-weight: normal;"> I'm a junior at the University of Illinois at Urbana-Champaign,
+                        studying Computer Science and Advertising with a certificate in Data Science.
+                        I'm especially interested in software development and machine learning. </p>
+                </div>
+                <div class="col-4 col-md-4">
+                    <div class="skill-bars">
+                        <div class="bar">
+                            <div class="info">
+                                <span>C/C++</span>
+                            </div>
+                            <div class="progress-line html">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>Java</span>
+                            </div>
+                            <div class="progress-line css">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>Python</span>
+                            </div>
+                            <div class="progress-line jquery">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="progress-line python">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>HTML/CSS</span>
+                            </div>
+                            <div class="progress-line mysql">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-3 mb-3">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-4 col-md-3 text-start">
+                    <h2 style="font-style: serif; margin-bottom: 30px;">Connect with me!</h2>
+                    <p style="font-weight: normal;">Click on the folder to see my other platforms.</p>
+                    <a href="mailto:lyamun2@illinois.edu">
+                        <button type="submit" class="buttonResume" style="margin-top:20px; vertical-align:middle">
+                            <span>Contact Me</span>
+                        </button>
+                    </a>
+                </div>
+                <div class="col-2 col-md-3">
+                    <div
+                        style="height: 500px; position: relative; display: flex; justify-content: center; align-items: center;">
+                        <div class="folder-container">
+                            <div class="folder">
+                                <div class="folder__back">
+                                    <div class="paper paper-1">
+                                        <a href="https://www.linkedin.com/in/lya-mun-654582279/"><svg
+                                                xmlns="http://www.w3.org/2000/svg" height="46" width="44"
+                                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path fill="black"
+                                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                                            </svg> </a>
+                                    </div>
+                                    <div class="paper paper-2">
+                                        <a href="https://github.com/fldk0804"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                height="46" width="45.5"
+                                                viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path fill="black"
+                                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                            </svg> </a>
+                                    </div>
+                                    <div class="paper paper-3">
+                                        <a href="https://github.com/fldk0804"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                height="46" width="45.5"
+                                                viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path fill="Black"
+                                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                            </svg> </a>
+                                    </div>
+                                    <div class="folder__front"></div>
+                                    <div class="folder__front right"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </main>
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        // Folder interaction
+        document.querySelector('.folder').addEventListener('click', function () {
+            this.classList.toggle('open');
+        });
+
+        // Card carousel functionality with smooth transitions
+        document.querySelectorAll('.card-carousel').forEach(carousel => {
+            const track = carousel.querySelector('.card-track');
+            const slides = carousel.querySelectorAll('.card-slide');
+            const indicators = carousel.querySelectorAll('.card-indicator');
+            let currentIndex = 0;
+            let startX = 0;
+            let currentX = 0;
+            let isDragging = false;
+
+            // Touch and mouse event handlers
+            track.addEventListener('mousedown', startDrag);
+            track.addEventListener('touchstart', startDrag);
+            track.addEventListener('mousemove', drag);
+            track.addEventListener('touchmove', drag);
+            track.addEventListener('mouseup', endDrag);
+            track.addEventListener('touchend', endDrag);
+            track.addEventListener('mouseleave', endDrag);
+
+            function startDrag(e) {
+                isDragging = true;
+                startX = e.type === 'mousedown' ? e.pageX : e.touches[0].pageX;
+                track.style.transition = 'none';
+            }
+
+            function drag(e) {
+                if (!isDragging) return;
+                e.preventDefault();
+                currentX = e.type === 'mousemove' ? e.pageX : e.touches[0].pageX;
+                const diff = currentX - startX;
+                track.style.transform = `translateX(${diff}px)`;
+            }
+
+            function endDrag() {
+                if (!isDragging) return;
+                isDragging = false;
+                const diff = currentX - startX;
+                const threshold = track.offsetWidth * 0.2;
+
+                if (Math.abs(diff) > threshold) {
+                    if (diff > 0 && currentIndex > 0) {
+                        currentIndex--;
+                    } else if (diff < 0 && currentIndex < slides.length - 1) {
+                        currentIndex++;
+                    }
+                }
+
+                updateCarousel();
+            }
+
+            function updateCarousel() {
+                track.style.transition = 'transform 0.3s ease-out';
+                const translateX = -currentIndex * 100;
+                track.style.transform = `translateX(${translateX}%)`;
+
+                // Update indicators
+                indicators.forEach((indicator, index) => {
+                    indicator.classList.toggle('active', index === currentIndex);
+                });
+
+                // Reset position if we've reached the end
+                if (currentIndex >= slides.length) {
+                    setTimeout(() => {
+                        track.style.transition = 'none';
+                        currentIndex = 0;
+                        track.style.transform = 'translateX(0)';
+                        indicators.forEach((indicator, index) => {
+                            indicator.classList.toggle('active', index === currentIndex);
+                        });
+                    }, 300);
+                }
+            }
+
+            // Indicator click handlers
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateCarousel();
+                });
+            });
+
+            // Initialize carousel
+            updateCarousel();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+{
+    "name": "lyamun.github.io",
+    "version": "1.0.0",
+    "description": "Personal portfolio website",
+    "main": "index.js",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fldk0804/lyamun.github.io.git"
+    },
+    "keywords": [
+        "portfolio",
+        "personal-website"
+    ],
+    "author": "Lya Mun",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/fldk0804/lyamun.github.io/issues"
+    },
+    "homepage": "https://github.com/fldk0804/lyamun.github.io#readme",
+    "dependencies": {
+        "base64-js": "^1.5.1",
+        "buffer": "^6.0.3",
+        "csstype": "^3.1.3",
+        "draco3d": "^1.5.7",
+        "fflate": "^0.6.10",
+        "ieee754": "^1.2.1",
+        "its-fine": "^1.2.5",
+        "js-tokens": "^4.0.0",
+        "loose-envify": "^1.4.0",
+        "maath": "^0.6.0",
+        "n8ao": "^1.10.0",
+        "postprocessing": "^6.37.4",
+        "potpack": "^1.0.2",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-reconciler": "^0.27.0",
+        "react-use-measure": "^2.1.7",
+        "scheduler": "^0.21.0",
+        "suspend-react": "^0.1.3",
+        "three": "^0.160.1",
+        "three-stdlib": "^2.36.0",
+        "zustand": "^3.7.2"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-react": "^4.2.1",
+        "vite": "^5.1.4"
+    }
+}

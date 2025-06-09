@@ -80,13 +80,6 @@ I am a junior at the University of Illinois at Urbana-Champaign, studying Comput
 
 Feel free to reach out to me at [lyamun2@illinois.edu](mailto:lyamun2@illinois.edu)
 
-## 🙏 Credits
-
-Special thanks to:
-- [Cursor](https://cursor.sh/) - For the development environment
-- [ChatGPT](https://chat.openai.com/) - For development assistance
-- [ReactBits](https://www.reactbits.dev/) - For inspiration and reference
-
 ## 📄 License
 
 This project is open source and available under the MIT License.

@@ -17,8 +17,7 @@
     {
         "imports": {
             "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
-            "three/examples/jsm/environments/RoomEnvironment.js": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/environments/RoomEnvironment.js",
-            "ballpit.js": "ballpit.js"
+            "three/examples/jsm/environments/RoomEnvironment.js": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/environments/RoomEnvironment.js"
         }
     }
     </script>
@@ -37,38 +36,36 @@
 <body>
     <main>
         <header id="start">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#start" style="width: auto; max-width: 100px;">
-                    <img src="static/images/center.png" style="width:100%; height:100%;">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#start">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="mailto:lyamun2@illinois.edu">Contact</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Work
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="static/images/Resume_LyaM.pdf"
-                                        target="_blank">Resume</a></li>
-                                <li><a class="dropdown-item" href="#projects">Projects</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+            <nav class="navbar navbar-expand navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#start"
+                        style="width: auto; max-width: 100px; display: flex; align-items: center;">
+                        <img src="static/images/center.png" style="width:80%; height:80%; object-fit: contain;">
+                    </a>
+                    <div class="navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#start">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mailto:lyamun2@illinois.edu">Contact</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Work
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="static/images/Resume_LyaM.pdf"
+                                            target="_blank">Resume</a></li>
+                                    <li><a class="dropdown-item" href="#projects">Projects</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -241,7 +238,7 @@
 
         <div class="container-fluid mt-3 mb-3">
             <div class="row justify-content-center align-items-center">
-                <div class="col-md-3 text-start">
+                <div class="col-4 col-md-3 text-start">
                     <h2 style="font-style: serif; margin-bottom: 30px;">Connect with me!</h2>
                     <p style="font-weight: normal;">Click on the folder to see my other platforms.</p>
                     <a href="mailto:lyamun2@illinois.edu">
@@ -250,7 +247,7 @@
                         </button>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-2 col-md-3">
                     <div
                         style="height: 500px; position: relative; display: flex; justify-content: center; align-items: center;">
                         <div class="folder-container">
